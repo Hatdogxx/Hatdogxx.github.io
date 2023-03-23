@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	Full name: <input type="text" id="myName"><br>
+	Address: <input type="text" id="myadd"><br>
+	Birthday: <input type="date" id="myBirth"><br>
+	Age: <input type="text" id="myAge"><br>
+	<input type="submit" onclick="myInfos()">
+	<p id="para1"></p>
+	<p id="para2"></p>
+
+<script type="text/javascript">
+	function myInfos() {
+	let name = document.getElementById("myName").value;
+	let address = document.getElementById("myadd").value;
+	let birthday = document.getElementById("myBirth").value;
+	let age = document.getElementById("myAge").value;
+
+	document.getElementById("para1").innerHTML = "Good day, I am " + name + " And I am from " + address;
+	document.getElementById("para2").innerHTML = "I am born on " + birthday + " and I am " + age + " years old.";
+	}
+</script>
+
+
+</body>
+</html>
